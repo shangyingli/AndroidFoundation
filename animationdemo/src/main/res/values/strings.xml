@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AnimationDemo</string>
+    <string name="animation_btn">我是动画</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_item"
+        android:icon="@drawable/add"
+        android:title="add" />
+    <item
+        android:id="@+id/remove_item"
+        android:icon="@drawable/delete"
+        android:title="delete"/>
+    <item
+        android:id="@+id/jump_activity"
+        android:title="jump" />
+</menu>

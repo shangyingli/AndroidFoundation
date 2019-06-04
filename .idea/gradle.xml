@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ServerSocket" />
+            <option value="$PROJECT_DIR$/animationdemo" />
+            <option value="$PROJECT_DIR$/broasdcastdemo" />
+            <option value="$PROJECT_DIR$/contentproviderdemo" />
+            <option value="$PROJECT_DIR$/dynimicpermission" />
+            <option value="$PROJECT_DIR$/eventdispacher" />
+            <option value="$PROJECT_DIR$/fileoperator" />
+            <option value="$PROJECT_DIR$/fragmentlearn" />
+            <option value="$PROJECT_DIR$/greendaolearn" />
+            <option value="$PROJECT_DIR$/hotfix" />
+            <option value="$PROJECT_DIR$/imagecompress" />
+            <option value="$PROJECT_DIR$/installer" />
+            <option value="$PROJECT_DIR$/intentservicedemo" />
+            <option value="$PROJECT_DIR$/leackcanary" />
+            <option value="$PROJECT_DIR$/listviewdemo" />
+            <option value="$PROJECT_DIR$/loadermanagerdemo" />
+            <option value="$PROJECT_DIR$/memoryanaysis" />
+            <option value="$PROJECT_DIR$/ninepatch" />
+            <option value="$PROJECT_DIR$/okiodemo" />
+            <option value="$PROJECT_DIR$/packagemanager" />
+            <option value="$PROJECT_DIR$/persistapp" />
+            <option value="$PROJECT_DIR$/picasodemo" />
+            <option value="$PROJECT_DIR$/popupwindowdemo" />
+            <option value="$PROJECT_DIR$/progressbardemo" />
+            <option value="$PROJECT_DIR$/pushdemo" />
+            <option value="$PROJECT_DIR$/service" />
+            <option value="$PROJECT_DIR$/servicelearn" />
+            <option value="$PROJECT_DIR$/socketclient" />
+            <option value="$PROJECT_DIR$/surfaceviewdemo" />
+            <option value="$PROJECT_DIR$/testinstaller" />
+            <option value="$PROJECT_DIR$/toucheventdemo" />
+            <option value="$PROJECT_DIR$/usecontentprovider" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

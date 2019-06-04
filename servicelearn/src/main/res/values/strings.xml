@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">serviceLearn</string>
+    <string name="start_service">启动服务</string>
+    <string name="stop_service">停止服务</string>
+    <string name="bind_service">绑定service</string>
+    <string name="unbind_service">解绑服务</string>
+    <string name="stert_remote_service">启动远程服务</string>
+    <string name="bind_remote_service">绑定远程服务</string>
+</resources>

@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.installer"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name="InstallApplication"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Base.Animation.AppCompat.Dialog"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <service android:name=".InstallerService">
+            <intent-filter>
+                <action android:name="com.example.installer.installer" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

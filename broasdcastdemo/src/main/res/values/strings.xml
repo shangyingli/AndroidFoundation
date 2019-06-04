@@ -1,0 +1,4 @@
+<resources>
+    <string name="text_sticky">注册黏性广播</string>
+    <string name="text_normal">注册普通广播</string>
+</resources>

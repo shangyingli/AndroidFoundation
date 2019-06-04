@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NineGridView">
+        <attr name="nine_gv_spacing" format="dimension"/>
+        <attr name="nine_maxImageNum" format="integer" />
+        <attr name="single_image_size" format="dimension" />
+    </declare-styleable>
+</resources>

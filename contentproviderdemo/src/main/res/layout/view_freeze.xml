@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/click_ripple">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:src="@mipmap/ic_launcher"
+            android:focusable="false"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/app_name"
+            android:text="app"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/notify_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/unclick"/>
+
+</FrameLayout>

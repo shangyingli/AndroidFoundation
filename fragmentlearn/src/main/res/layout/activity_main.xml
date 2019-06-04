@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="等待fragment发送消息"/>
+
+    <Button
+        android:id="@+id/receive_fragment_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收fragment消息"/>
+
+    <Button
+        android:id="@+id/jump_another_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换到其他Framentment"/>
+
+    <!--<fragment-->
+        <!--android:id="@+id/left_fragment"-->
+        <!--android:name="com.example.fragmentlearn.LeftFragment"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1" />-->
+
+    <!--<fragment-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/right_fragment"-->
+    <!--android:name="com.example.fragmentlearn.RightFragment"/>-->
+
+    <FrameLayout
+        android:id="@+id/right_layout"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
