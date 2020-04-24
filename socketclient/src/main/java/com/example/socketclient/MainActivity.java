@@ -76,8 +76,6 @@ public class MainActivity extends Activity {
                 });
             }
         });
-
-
         sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

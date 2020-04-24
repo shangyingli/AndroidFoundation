@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RecordActivity</string>
+    <string name="title">"Custom Greeting"</string>
+    <string name="op_record_state_record_string">Recording</string>
+    <string name="max_length_reached">Maximum length reached</string>
+    <string name="op_too_low_tips">The recording is less than a second, can not save</string>
+    <string name="stop_to_savae">Is the current recording, stop and save?</string>
+    <string name="name_and_save">Name and save</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_save">Save</string>
+    <string name="txt_record">Record</string>
+    <string name="input_file_name_please">Please enter a file name</string>
+    <string name="record_completed">Recording updated</string>
+
+    <string name="op_record_state_pause_string">Paused</string>
+    <string name="op_record_state_play_string">Playing</string>
+
+</resources>

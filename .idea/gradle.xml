@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Compute" />
+            <option value="$PROJECT_DIR$/InheritationDemo" />
             <option value="$PROJECT_DIR$/ServerSocket" />
             <option value="$PROJECT_DIR$/animationdemo" />
             <option value="$PROJECT_DIR$/broasdcastdemo" />
@@ -31,15 +33,20 @@
             <option value="$PROJECT_DIR$/persistapp" />
             <option value="$PROJECT_DIR$/picasodemo" />
             <option value="$PROJECT_DIR$/popupwindowdemo" />
+            <option value="$PROJECT_DIR$/preferencedemo" />
             <option value="$PROJECT_DIR$/progressbardemo" />
             <option value="$PROJECT_DIR$/pushdemo" />
+            <option value="$PROJECT_DIR$/recordactivity" />
+            <option value="$PROJECT_DIR$/savestatedemo" />
             <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/servicelearn" />
+            <option value="$PROJECT_DIR$/simpleactivity" />
             <option value="$PROJECT_DIR$/socketclient" />
             <option value="$PROJECT_DIR$/surfaceviewdemo" />
             <option value="$PROJECT_DIR$/testinstaller" />
             <option value="$PROJECT_DIR$/toucheventdemo" />
             <option value="$PROJECT_DIR$/usecontentprovider" />
+            <option value="$PROJECT_DIR$/xmlparsedemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

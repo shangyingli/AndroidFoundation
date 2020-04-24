@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Demo for checkboxpreference" >
+
+    <CheckBoxPreference
+        android:key="key_cbp"
+        android:title="checkbox"
+        android:summary="this is a demo"
+        android:summaryOn="open me"
+        a
+        android:summaryOff="close me"
+        android:persistent="false"/>
+
+</PreferenceScreen>

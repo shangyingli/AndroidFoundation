@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/id_record"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@null"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/op_sound_record_icon" />
+
+    <ImageView
+        android:id="@+id/id_stop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="61dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="center"
+        android:src="@drawable/op_sound_stop_selector" />
+
+    <include layout="@layout/layout_record_view" />
+</RelativeLayout>
+
+

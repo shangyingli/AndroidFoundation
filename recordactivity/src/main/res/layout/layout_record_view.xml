@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/id_record"
+    android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:id="@+id/id_timer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/id_stateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="Slate-Book"
+            android:text="No recording"/>
+
+        <LinearLayout
+            android:id="@+id/id_timerView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/op_record_page_hourView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:fontFamily="Slate-Book" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="11dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/op_record_page_minView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:fontFamily="Slate-Book" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="11dp"
+                android:layout_marginEnd="11dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/op_record_page_secView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="00"
+                android:fontFamily="Slate-Book" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

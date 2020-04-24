@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,9 +19,12 @@ public class MainActivity extends Activity {
     private CustomReceiver customReceiver;
     private PackageChangeReceiver packageChangeReceiver;
     private StickReceiver stickReceiver;
+    private LocalReceiver localReceiver;
     private static final String ACTION_STICK_CUSTOM = "action_stick_custom";
     private static final String ACTION_NORMAL_CUSTOM = "action_normal_custom";
     private static final String ACTION_ORDER_CUSTOM = "action_order_custom";
+
+    private static final String ACTION_LOCAL_BROADCAST = "action_local_broadcast";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,7 @@ public class MainActivity extends Activity {
         //2发送普通广播
         Intent normalIntent = new Intent();
         normalIntent.setAction(ACTION_NORMAL_CUSTOM);
+        normalIntent.setDataAndType(Uri.EMPTY, "custom");
         normalIntent.setData(Uri.parse("custom://"));
         sendBroadcast(normalIntent);
         //3发送有序广播
@@ -49,6 +54,20 @@ public class MainActivity extends Activity {
 
 //        registerCustomReceiver();
 //        registerSystemReceiver();
+
+        //注册本地广播
+        registerLocalBroadcast();
+        //4发送本地广播
+        Intent localIntent = new Intent();
+        intent.setAction(ACTION_LOCAL_BROADCAST);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(localIntent);
+    }
+
+    private void registerLocalBroadcast() {
+        localReceiver = new LocalReceiver();
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(ACTION_LOCAL_BROADCAST);
+        LocalBroadcastManager.getInstance(this).registerReceiver(localReceiver, intentFilter);
     }
 
     private void registerFirstOrderBroadcast() {
@@ -116,6 +135,14 @@ public class MainActivity extends Activity {
         }
     }
 
+    private class LocalReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+        }
+    }
+
 
     public void start(View view) {
         Intent intent = new Intent();
@@ -139,6 +166,8 @@ public class MainActivity extends Activity {
         if (stickReceiver != null) {
             unregisterReceiver(stickReceiver);
         }
+
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(localReceiver);
     }
 
     //注册几次广播就会接收到几次广播， 并且注册了几次必须销毁几次
